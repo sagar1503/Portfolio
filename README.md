@@ -75,7 +75,7 @@ Follow these steps to run the project locally.
 
 Interested in working together?
 
-- **Email**: [Agarwal.sagar98@gmail.com](mailto:Agarwal.sagar98@gmail.com)
+- **Email**: [connect@sagaragarwal.dev](mailto:connect@sagaragarwal.dev)
 - **LinkedIn**: [Sagar Agarwal](https://www.linkedin.com/in/sagar-agarwal-ds/)
 - **GitHub**: [sagar1503](https://github.com/sagar1503)
 

@@ -26,11 +26,11 @@ const Contact: React.FC = () => {
             whileTap={{ scale: 0.98 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            href="mailto:Agarwal.sagar98@gmail.com"
+            href="mailto:connect@sagaragarwal.dev"
             className="flex items-center justify-center px-8 py-4 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition shadow-lg shadow-primary-500/20 w-full sm:w-auto font-medium group"
           >
             <MailIcon className="w-5 h-5 mr-3 group-hover:animate-pulse" />
-            Agarwal.sagar98@gmail.com
+            connect@sagaragarwal.dev
           </motion.a>
 
           <motion.a
