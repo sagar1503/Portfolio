@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Technology', href: '#technology' },
     { name: 'How I Work', href: '#process' },
+    { name: 'Resume', href: '/resume.pdf', external: true },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -27,8 +28,8 @@ const Navbar: React.FC = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 top-0 transition-all duration-300 ${scrolled
-          ? 'bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm'
-          : 'bg-transparent border-transparent'
+        ? 'bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm'
+        : 'bg-transparent border-transparent'
         }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,6 +45,8 @@ const Navbar: React.FC = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
@@ -86,6 +89,8 @@ const Navbar: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   onClick={() => setIsOpen(false)}
                   className="block px-3 py-3 text-base font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-50 rounded-lg transition-colors"
                 >
